@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../img/bg2_1920x1200.jpg');
+  color: white;
+}
+
+hr{
+  margin: 30px 0;
+}
+
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.counter{
+  display: inline-block;
+  background-color: #FCA600;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+  /* con line-height alto quanto il contenitore il testo si posiziona in centro */
+  line-height: 50px;
+
+  /* creo il cerchio */
+  border-radius: 50%;
+}
+
+.header-top img{
+  width: 150px;
+  /* per centrare l'allinamento del testo con una immagine l'istruzione va data all'immagine */
+  vertical-align: middle;
+}
+
+.header-top span{
+  font-size: 30px;
+}
+
+.header-bottom button{
+  padding: 2px 5px;
+}
+.header-bottom{
+  font-size: 25px;
+}
+
+.email-row{
+  background-color: #D3D3D3;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.email-row.unread{
+  background-color: white;
+}
+
+.email-row .text-mail::before{
+  content: ' - ';
+}
+
+.email-row .text-mail::after{
+  content: ' ...';
+}
+
+footer{
+  text-align: center;
+  font-size: 40px;
+}
+
+footer span{
+  font-size: 16px;
+  font-style: italic;
+}
